@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <style>
+            @font-face {
+                font-family: 'Helvetica';
+                src: url("web_assets/fonts/helvetica.ttf");
+            }
+
+            @font-face {
+                font-family: 'VCR';
+                src: url("web_assets/fonts/vcr.ttf");
+            }
+
+            body {
+                background-color: black;
+                font-family: "Helvetica";
+            }
+
+            header {
+                background-color: black;
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+
+            .logoImage {
+                display: block;
+                max-width: 7.5%;
+                max-height: 7.5%;
+                min-width: 5%;
+                min-height: 5%;
+                transition: transform 0.2s;
+            }
+
+            .logoImage:hover {
+                transform: scale(1.1);
+            }
+
+            .headerNav {
+                font-family: "VCR";
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: transform 0.2s;
+            }
+
+            .headerNav:hover {
+                transform: scale(1.1);
+            }
+
+            .homeFeed {
+                background: url("web_assets/images/glitch.gif");
+                background-size: cover;
+                background-position: center;
+                padding: 5rem 2rem;
+                text-align: center;
+            }
+
+            .homeText {
+                font-family: "Helvetica";
+                color: white;
+                font-size: 700%;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+
+            .homeText2 {
+                font-family: "Helvetica";
+                font-size: 150%;
+                color: white;
+                font-weight: bold;
+            }
+
+            .defaultFeed {
+                text-align: center;
+            }
+
+            .playText {
+                font-family: "Helvetica";
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+
+            .playText2 {
+                font-family: "Helvetica";
+                color: white;
+            }
+
+            .platformFeed {
+                background: url("web_assets/images/glitch.gif");
+                background-size: cover;
+                background-position: center;
+                background-repeat: repeat;
+            }
+
+            .platformIcon {
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+                max-height: 100%;
+                height: auto;
+                transition: transform 0.2s;
+            }
+
+            .platformIcon:hover {
+                transform: scale(1.1);
+            }
+
+            .platformContainer {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                gap: 15px;
+                padding: 20px;
+                min-width: min-content;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 640px) {
+                /*.logoImage {
+                    max-width: 5%;
+                    max-height: 5%;
+                }*/
+            }
+        </style>
+
+        <title>Dull Ache</title>
+        <link rel="icon" type="images/x-icon" href="web_assets/images/icon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="web_assets/images/logo.png" class="logoImage"></a>
+
+            <p class="headerNav"><a href="#play">Play</a></p>
+            <p class="headerNav"><a href="#support">Support Us</a></p>
+            <p class="headerNav"><a href="#follow">Follow</a></p>
+            <p class="headerNav"><a href="#info">Info</a></p>
+        </header>
+
+        <section class="homeFeed">
+
+            <h1 class="homeText">DULL ACHE<br>is coming soon!</h1>
+            <p class="homeText2">'Dull Ache - Chapter 1' will be coming out soon on avaliable platforms, please keep an eye out for more news!</p>
+            <p class="homeText2">In the mean time, why don't you follow us? You'll get to see some behind the scenes footage, news, and more!</p>
+
+        </section>
+
+        <section class="defaultFeed" id="info">
+        
+            <h1 class="playText">What is 'Dull Ache'?</h1>
+            <p class="playText2">'Dull Ache' is a indie top-down RPG game created by 'PurpleInsomnia Games', (mostly) revolving around a young couple and a horrifying spiral of events that they get roped into.
+            <br><br>As of writing (June 8th, 2026), Three of Seven chapters have been completely written, some chapters might release two at a time, as it'd feel be pretty evil to leave an audience hanging after a cool cliffhanger.
+            <br><br>As 'Dull Ache' is a psychological-horror game, the game will cover, mention and/or show sensitive subjects such as:
+            <br><br>- Suicide
+            <br>- Self Harm
+            <br>- Abuse
+            <br>- Gorey Imagery
+            <br>- Mentions of Sexual Violence
+            <br>- Drug Addiction & Overdosing
+            <br><br>If you are sensitive to any of these topics listed, there will be an option to be warned in game before hand, with an option to skip the scene in question.
+            <br>There may also be like... two jumpscares cause they're kinda corny, so there will be an option to remove those as well if you wish.</p>
+
+        </section>
+
+        <br>
+        <br>
+
+        <section class="defaultFeed" id="play">
+
+            <h1 class="playText">Want To Play 'Dull Ache'?<br>Select A Platform</h1>
+
+            <section class="platformFeed">
+                <div class="platformContainer">
+                    <a href="#play">
+                        <img src="web_assets/images/buttons/newgrounds_NONE.png" class="platformIcon">
+                    </a>
+                    <a href="https://gamejolt.com/games/dullache/1061575">
+                        <img src="web_assets/images/buttons/gamejolt.png" class="platformIcon">
+                    </a>
+                    <a href="#play">
+                        <img src="web_assets/images/buttons/itch_NONE.png" class="platformIcon">
+                    </a>
+                </div>
+                <p class="homeText2">(More Platforms May Be Added In The Future!)</p>
+            </section>
+
+        </section>
+
+        <section class="defaultFeed" id="support">
+        
+            <h1 class="playText">Support Us!</h1>
+        
+            <p class="playText2">While 'Dull Ache' might be free-to-play (...for the time being, at least), it still costs a bit of time and money to develop.
+            <br><br>If you can, you should totally support PurpleInsomnia on Kofi! Simply just supporting could bring some pretty shweet 'Dull Ache' merchandise, funded independently, and designed in-house or maybe by a lucky fan!</p>
+
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support PurpleInsomnia on Ko-fi', '#5c5c5c', 'G2G01PNI19');kofiwidget2.draw();</script> 
+
+        </section>
+
+        <br>
+        <br>
+
+        <section class="defaultFeed" id="follow">
+        
+            <h1 class="playText">Follow Us!</h1>
+
+            <p class="playText2">Following us on social media is another way you can show your support for this cool game, spreading the word is always a good way to give this game the large audience it deserves!</p>
+
+            <section class="platformFeed">
+                <div class="platformContainer">
+                    <a href="#follow">
+                        <img src="web_assets/images/buttons/twitter.png" class="platformIcon">
+                    </a>
+                </div>
+                <p class="homeText2">(More Social Media Profiles May Be Added In The Future!)</p>
+            </section>
+
+        </section>
+        
+    </body>
+
+</html>
