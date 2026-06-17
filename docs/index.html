@@ -64,14 +64,14 @@
             .homeText {
                 font-family: "Helvetica";
                 color: white;
-                font-size: 150%;
+                font-size: 700%;
                 font-weight: bolder;
                 text-transform: uppercase;
             }
 
             .homeText2 {
                 font-family: "Helvetica";
-                font-size: 100%;
+                font-size: 150%;
                 color: white;
                 font-weight: bold;
             }
@@ -124,11 +124,38 @@
                 margin: 0 auto;
             }
 
-            @media (max-width: 640px) {
+            @media (max-width: 768px) {
                 /*.logoImage {
                     max-width: 5%;
                     max-height: 5%;
                 }*/
+                .homeText {
+                    font-size: 150%;
+                }
+
+                .homeText2 {
+                    font-size: 100%;
+                }
+            }
+
+            @media (max-width: 1280px) {
+                .homeText {
+                    font-size: 300%;
+                }
+
+                .homeText2 {
+                    font-size: 125%;
+                }
+            }
+
+            @media (max-width: 2560px) {
+                .homeText {
+                    font-size: 450%;
+                }
+
+                .homeText2 {
+                    font-size: 137%;
+                }
             }
         </style>
 
